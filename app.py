@@ -30,15 +30,6 @@ def valid_embeddings():
     embeddings = formatted_embeddings
     return jsonify({"message": "Valid embeddings fetched", "embeddings": embeddings}), 200
 
-# # API at /api/v1/analysis/
-# @app.route("/api/v1/analysis/", methods=['POST'])
-# def analysis():
-#     if request.is_json:
-#         data = request.get_json()
-#         sentiment = get_sentiment(data['text'])
-#         return jsonify({"message": "Data received", "data": data, "sentiment": sentiment}), 200
-#     else:
-#         return jsonify({"error": "Invalid Content-Type"}), 400
 
 @app.route("/api/v1/classify/", methods=['POST'])
 def classify():
