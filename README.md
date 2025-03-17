@@ -1,4 +1,4 @@
-Lab 1: Sentiment Analysis
+Lab 1: Sentiment Analysis for MLOps
 
 Explore flask and huggingface transformers.
 
