@@ -99,6 +99,8 @@ Below is the diagram illustrating the system architecture. It includes component
                          +----------------------------+
                          | Batch Processing System    |
                          +----------------------------+
+``` 
+
 ## 6. Edge Case Handling
 
 - **Low Confidence**: If the model's confidence is low (e.g., due to poor image quality or ambiguous food items), the system will return the top 5 predictions.
