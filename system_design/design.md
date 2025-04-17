@@ -2,15 +2,15 @@
 
 ## 1. Differences from Grammarly System Design
 
-| Area | Grammarly System Design | Chat Summarization System |
-|------|------------------------|--------------------------|
-| Input | Real-time, short-form user text (per keystroke) | Full chat history (possibly long-form) |
-| Output | Grammar or style suggestions | One-shot summary of the entire conversation |
-| Latency Constraints | Ultra low latency (<100ms), operates inline with typing | Precomputed summaries; latency is acceptable if pre-generated |
-| Model Type | Lightweight, possibly hybrid rule-based + ML | Large-scale transformer (e.g., Google's custom model) |
-| Architecture Focus | Client-focused (edge or in-memory) | Server-centric with cloud inference (e.g., on TPUs or GPUs) |
-| Persistence Needs | Minimal or none | Requires persistent storage of chat and generated summaries |
-| Feedback Mechanism | May offer real-time corrections | Requires structured feedback (e.g., thumbs up/down on summary quality) |
+| Area                | Grammarly System Design                                 | Chat Summarization System                                              |
+|---------------------|---------------------------------------------------------|------------------------------------------------------------------------|
+| Input               | Real-time, short-form user text (per keystroke)         | Full chat history (possibly long-form)                                 |
+| Output              | Grammar or style suggestions                            | One-shot summary of the entire conversation                            |
+| Latency Constraints | Ultra low latency (<100ms), operates inline with typing | Precomputed summaries; latency is acceptable if pre-generated          |
+| Model Type          | Lightweight, possibly hybrid rule-based + ML            | Large-scale transformer (e.g., Google's custom model)                  |
+| Architecture Focus  | Client-focused (edge or in-memory)                      | Server-centric with cloud inference (e.g., on TPUs or GPUs)            |
+| Persistence Needs   | Minimal or none                                         | Requires persistent storage of chat and generated summaries            |
+| Feedback Mechanism  | May offer real-time corrections                         | Requires structured feedback (e.g., thumbs up/down on summary quality) |
 
 ## 2. System Design Document
 
